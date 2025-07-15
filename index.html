@@ -68,6 +68,63 @@
       padding: 20px;
       background-color: #eaeaea;
     }
+
+    /* Grid Tempat Nongkrong */
+    .tempat-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .tempat-card {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 calc(50% - 20px);
+      box-sizing: border-box;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideIn 1s ease-out forwards;
+    }
+
+    .tempat-card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .tempat-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .tempat-card:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .tempat-card a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .tempat-card a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .tempat-card {
+        flex: 1 1 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -88,7 +145,7 @@
       <h2>Sejarah</h2>
       <img src="assets/image/sejarah-kota-jember.jpg" alt="Sejarah Kota Jember" />
       <p>
-        Pada awal abad ke-20, Jember merupakan bagian dari wilayah Bondowoso. Daerah ini berkembang pesat karena menjadi salah satu pusat perkebunan milik kolonial Belanda, terutama tembakau, kopi, dan karet. Seiring waktu, Jember tumbuh menjadi pusat ekonomi dan budaya di wilayah timur Jawa.
+        Pada awal abad ke-20, Jember merupakan bagian dari wilayah Bondowoso. Daerah ini berkembang pesat karena menjadi salah satu pusat perkebunan milik kolonial Belanda, terutama tembakau, kopi, dan karet.
       </p>
     </section>
 
@@ -106,21 +163,56 @@
       <h3>Pantai Papuma</h3>
       <img src="assets/image/papuma-jember.jpg" alt="Pantai Papuma" />
       <p>
-        Pantai Papuma (Pasir Putih Malikan) menawarkan pemandangan laut biru jernih, formasi karang unik, dan hutan tropis. Lokasi ini menjadi tempat favorit untuk fotografi alam dan menikmati matahari terbit.
+        Pantai Papuma (Pasir Putih Malikan) menawarkan pemandangan laut biru jernih, formasi karang unik, dan hutan tropis.
       </p>
 
       <h3>Puncak Rembangan</h3>
       <img src="assets/image/puncak-rembangan.jpg" alt="Puncak Rembangan" />
       <p>
-        Terletak ±650 meter di atas permukaan laut, Puncak Rembangan adalah tempat relaksasi dengan udara sejuk, panorama perkebunan kopi, serta fasilitas rekreasi seperti kolam renang dan restoran.
+        Terletak ±650 meter di atas permukaan laut, Puncak Rembangan adalah tempat relaksasi dengan udara sejuk.
       </p>
 
       <h3>Jember Fashion Carnaval (JFC)</h3>
       <img src="assets/image/jfc-jember.jpg" alt="Jember Fashion Carnival" />
       <p>
-        JFC adalah festival kostum internasional tahunan yang menampilkan parade busana kreatif, penuh warna, dan megah di sepanjang jalan utama kota. Acara ini telah membawa nama Jember ke kancah dunia.
+        JFC adalah festival kostum internasional tahunan yang menampilkan parade busana kreatif.
       </p>
     </section>
+
+    <!-- Section Baru -->
+   <!-- ... bagian atas tidak berubah ... -->
+
+<section>
+  <h2>Rekomendasi Tempat Nongkrong Anak Muda</h2>
+  <div class="tempat-grid">
+
+    <div class="tempat-card">
+      <img src="assets/image/poppins.jpg" alt="Poppins Jember" />
+      <h3>Poppins Jember</h3>
+      <p>Tempat nongkrong cozy dan estetik. Cocok buat nugas, ngobrol, atau santai.</p>
+
+      <ul style="list-style: none; padding-left: 0; font-size: 14px; margin-top: 10px;">
+        <li>⭐ <strong>4.6</strong> (48 ulasan)</li>
+        <li>💸 Rp 25–50 rb per orang</li>
+        <li>☕ Kedai Kopi</li>
+        <li>🕒 Buka ⋅ Tutup : pukul 10.00 - 03.00</li>
+      </ul>
+
+      <p><strong>Alamat:</strong> Jl. Semeru No.235, Sumbersari, Jember</p>
+      <p><a href="https://maps.app.goo.gl/rUumnBWB5rJMjkRP6" target="_blank">📍 Lihat di Google Maps</a></p>
+    </div>
+
+    <div class="tempat-card">
+      <img src="assets/image/poppins-event.jpg" alt="Event DJ Poppins" />
+      <h3>Event Anak Muda di Poppins</h3>
+      <p>Ada acara musik, DJ, dan komunitas kreatif di malam hari. Pusatnya anak muda di Jember!</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ... footer tetap ... -->
+
   </main>
 
   <footer>
