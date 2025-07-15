@@ -1,57 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <title>Halaman Profil Jember</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Kabupaten Jember</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: url('assets/image/gedung-pemkab-jember.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      animation: fadeInUp 1.2s ease-out;
+      z-index: 1;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    h2, h3 {
+      color: #007B55;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: gray;
+      padding: 20px;
+      background-color: #eaeaea;
+    }
+  </style>
 </head>
 <body>
-  <h1>Jember</h1>
-  <img src="assets/image/gedung-pemkab-jember.jpg" alt="Gedung Pemkab Jember" width="300" />
-  <p>Sebuah kota yang terletak di Provinsi Jawa Timur, terkenal dengan julukan Kota "TEMBAKAU".</p>
 
-  <ul>
-    <li>Sejarah</li>
-    <li>Geografis</li>
-    <li>Wisata</li>
-  </ul>
+  <header>
+    <h1>Selamat Datang di Kabupaten Jember</h1>
+  </header>
 
-  <h2>Sejarah</h2>
-  <img src="assets/image/sejarah-kota-jember.jpg" alt="Sejarah Kota Jember" width="300" />
-  <p>
-    Pada masa 1900-an daerah Jember bukanlah sebuah kota, melainkan bagian dari Bondowoso yang dijadikan daerah perkebunan dan irigasi oleh Belanda...
-  </p>
+  <main>
+    <section>
+      <h2>Tentang Jember</h2>
+      <p>
+        Kabupaten Jember adalah salah satu wilayah di Provinsi Jawa Timur yang terkenal dengan sebutan Kota Tembakau. Dengan kekayaan budaya, pesona alam, dan festival internasional seperti Jember Fashion Carnaval (JFC), Jember telah menjadi salah satu tujuan wisata yang menarik di Indonesia.
+      </p>
+    </section>
 
-  <h2>Geografis</h2>
-  <img src="assets/image/geografis-jember.jpg" alt="Geografis Kota Jember" width="300" />
-  <p>
-    Secara geografis Jember berada pada posisi 7°05’–8°03’ LS dan 113°16’–114°03’ BT...
-  </p>
+    <section>
+      <h2>Sejarah</h2>
+      <img src="assets/image/sejarah-kota-jember.jpg" alt="Sejarah Kota Jember" />
+      <p>
+        Pada awal abad ke-20, Jember merupakan bagian dari wilayah Bondowoso. Daerah ini berkembang pesat karena menjadi salah satu pusat perkebunan milik kolonial Belanda, terutama tembakau, kopi, dan karet. Seiring waktu, Jember tumbuh menjadi pusat ekonomi dan budaya di wilayah timur Jawa.
+      </p>
+    </section>
 
-  <h2>Wisata</h2>
-  <p>
-    Jember terkenal dengan Festival Jember Fashion Carnaval dan destinasi alam seperti Pantai Papuma, Taman Botani Sukorambi, dan Puncak Rembangan...
-  </p>
+    <section>
+      <h2>Geografis</h2>
+      <img src="assets/image/geografis-jember.jpg" alt="Geografis Kota Jember" />
+      <p>
+        Secara geografis, Jember terletak antara 7°05’–8°03’ LS dan 113°16’–114°03’ BT. Wilayahnya membentang dari dataran rendah hingga pegunungan, dengan iklim tropis yang mendukung pertanian dan pariwisata alam.
+      </p>
+    </section>
 
-  <h3>Pantai Papuma</h3>
-  <img src="assets/image/papuma-jember.jpg" alt="Pantai Papuma" width="300" />
-  <p>
-    Pantai Pasir Putih Malikan (Papuma) terkenal dengan pasir putih dan hutan Malikan...
-  </p>
+    <section>
+      <h2>Wisata Unggulan</h2>
 
-  <h3>Puncak Rembangan</h3>
-  <img src="assets/image/puncak-rembangan.jpg" alt="Puncak Rembangan" width="300" />
-  <p>
-    Puncak Rembangan berada pada ketinggian ±650 m dpl, menawarkan udara sejuk, panorama alam, kolam renang, dan kebun kopi...
-  </p>
+      <h3>Pantai Papuma</h3>
+      <img src="assets/image/papuma-jember.jpg" alt="Pantai Papuma" />
+      <p>
+        Pantai Papuma (Pasir Putih Malikan) menawarkan pemandangan laut biru jernih, formasi karang unik, dan hutan tropis. Lokasi ini menjadi tempat favorit untuk fotografi alam dan menikmati matahari terbit.
+      </p>
 
-  <h3>Jember Fashion Carnaval (JFC)</h3>
-  <img src="assets/image/jfc-jember.jpg" alt="Jember Fashion Carnival" width="300" />
-  <p>
-    Acara tahunan budaya dan pariwisata dengan parade kreatif mendunia, gratis untuk umum...
-  </p>
+      <h3>Puncak Rembangan</h3>
+      <img src="assets/image/puncak-rembangan.jpg" alt="Puncak Rembangan" />
+      <p>
+        Terletak ±650 meter di atas permukaan laut, Puncak Rembangan adalah tempat relaksasi dengan udara sejuk, panorama perkebunan kopi, serta fasilitas rekreasi seperti kolam renang dan restoran.
+      </p>
 
-  <hr />
-  <footer style="text-align: center; font-size: 14px; color: gray; margin-top: 40px;">
+      <h3>Jember Fashion Carnaval (JFC)</h3>
+      <img src="assets/image/jfc-jember.jpg" alt="Jember Fashion Carnival" />
+      <p>
+        JFC adalah festival kostum internasional tahunan yang menampilkan parade busana kreatif, penuh warna, dan megah di sepanjang jalan utama kota. Acara ini telah membawa nama Jember ke kancah dunia.
+      </p>
+    </section>
+  </main>
+
+  <footer>
     &copy; 2025 Alviansyah Nurhidayat Yahya. All rights reserved.
   </footer>
 </body>
